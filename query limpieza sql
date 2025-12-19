@@ -1,0 +1,34 @@
+select
+id,
+pex,
+nps,
+gen,
+region,
+educ,
+edad,
+
+-- Jerarquia a Ingresos
+case
+when ingreso = 'Menos de $300.000' then '1) Menos de $300.000'
+when ingreso = 'Entre $300.001 y $399.999' then '2) Entre $300.001 y $399.999'
+when ingreso = 'Entre $400.000 y $599.999' then '3) Entre $400.000 y $599.999'
+when ingreso = 'Entre $600.000 y $1.099.000' then '4) Entre $600.000 y $1.099.000'
+else '5) $1.100.000 o más'
+end as GrupoIngreso,
+
+-- Categoria NPS
+case
+when nps >= 9 then 'Promotor'
+when nps <= 6 then 'Detractor'
+else 'Indiferente'
+end as CategoriaNPS,
+
+-- Flag Inconsistencia
+case
+when nps >= 9 and pex <= 3 then 1
+when nps <= 6 and pex >= 5 then 1
+else 0
+end as FlagInconsist
+
+from `reclamos_sernac.base`
+order by flaginconsist desc
