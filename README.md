@@ -20,3 +20,6 @@ Durante mi experiencia en el analisis de datos, defini una metodologia de trabaj
 
 ## Link al Dashboard
 https://lookerstudio.google.com/reporting/cc85dbca-949a-4777-9fee-8d10a1d36256
+
+## Base de datos SERNAC
+https://datos.gob.cl/dataset/encuesta-de-satisfaccion-reclamo
