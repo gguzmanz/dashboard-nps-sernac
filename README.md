@@ -18,6 +18,9 @@ Durante mi experiencia en el analisis de datos, defini una metodologia de trabaj
 6. Se procede a construir el grafico definido previamente en la etapa de boceto y en el caso de requerir se calculan metricas necesarias.
 7. Se evalua si el dashboard responde y resuelve la problematica inicialmente definida, en el caso que no, se recoje el feedback y se integra en la solución.
 
+## Decisión Panel Construido
+El panel principalmente muestra vista que permiten analizar los resultados del NPS de la encuesta realizada, mostrando el promedio del NPS, la cantidad de encuestados para tener clara la dimensión de esta encuesta. Se proponen graficos para entender la dispersión del NPS, un grafico de torta para determinar el porcentaje de promotores y desertores del total (Promotor NPS >= 9, Desertor NPS <= 6, Indiferente 7-8), y a continuación se proponen graficos para entender si existen correlaciones entre las caracteristicas cualitativas de los encuestados como su rango salarial o su edad con el resultado del NPS.
+
 ## Link al Dashboard
 https://lookerstudio.google.com/reporting/cc85dbca-949a-4777-9fee-8d10a1d36256
 
